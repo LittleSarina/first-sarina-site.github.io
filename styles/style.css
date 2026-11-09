@@ -28,17 +28,6 @@ body {
     border: 20px auto #272744;
 } */
 
-p {
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: 1px;
-    /*text-align: center;*/
-    color: #fbf5ef;
-    width: 700px;
-    a {
-        color: #f2d3ab;
-    }
-}
 
 /*.done {
     color:darkseagreen;
@@ -77,16 +66,24 @@ div.main-image {
 }
 
 div.main-paragraph {
-    p,
-    a {
+    max-width: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    p {
         font-size: 24px;
-        line-height: 1;
+        line-height: 1.4; /* Give lines room to breathe */
         letter-spacing: 1px;
-        text-align: center;
+        text-align: left;
         color: #fbf5ef;
-        width: 700px;
+        margin-top: 30px;
+
         a {
             color: #f2d3ab;
+            margin: 0 4px;
+            padding: 0;
+            /* Remove display: block/inline-block unless you need it,
+                   letting it flow naturally as an inline element inside the paragraph */
         }
     }
 }
@@ -96,8 +93,34 @@ div.instructions {
     color: #fbf5ef;
 
     ul.ins-list {
-        margin: 0;
+        margin-top: -15px;
+        margin-bottom: 30px;
         display: inline-block;
         text-align: left;
+    }
+}
+
+div.change-usr-button {
+    height: 50px;
+    position: relative;
+    border: 3px transparent green;
+    margin-top: -15px;
+    margin-bottom: 25px;
+
+    button {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        background-color: #fbf5ef;
+        font-size: 30px;
+        font-family: "Redaction 50", serif;
+        color: #272744;
+        padding: 12px 28px;
+        box-shadow: 6px 6px 1px #272744;
+        border: 4px solid #272744;
     }
 }
