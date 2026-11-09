@@ -40,12 +40,27 @@ p {
     }
 }
 
+/*.done {
+    color:darkseagreen;
+    text-decoration: line-through solid #272744 2px;
+}*/
+
 div.headline {
     div.title {
         font-size: 40px;
         text-align: center;
         margin: 0;
-        padding: 10px 0;
+        padding: 0;
+        text-shadow: 6px 6px 1px #272744;
+        color: #fbf5ef;
+        text-align: center;
+    }
+    div.subtitle {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+        margin-top: -30px;
+        padding: 0;
         text-shadow: 6px 6px 1px #272744;
         color: #fbf5ef;
         text-align: center;
@@ -57,6 +72,7 @@ div.main-image {
         display: block;
         margin: 0 auto;
         max-width: 50%;
+        height: 500px;
     }
 }
 
