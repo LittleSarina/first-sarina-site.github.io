@@ -17,33 +17,61 @@ body {
     border: 5px solid #8b6d9c;
 }
 
-h1 {
+/* h1 {
     font-size: 60px;
-    /*text-align: center;*/
+    text-align: center;
     margin: 0;
     padding: 20px 0;
     text-shadow: 6px 6px 1px #272744;
     color: #fbf5ef;
     text-align: center;
     border: 20px auto #272744;
-}
+} */
 
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 50%;
-}
-
-p,
-a {
-    font-size: 23px;
+p {
+    font-size: 24px;
     line-height: 1;
     letter-spacing: 1px;
-    text-align: center;
+    /*text-align: center;*/
     color: #fbf5ef;
     width: 700px;
     a {
         color: #f2d3ab;
+    }
+}
+
+div.headline {
+    div.title {
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        text-shadow: 6px 6px 1px #272744;
+        color: #fbf5ef;
+        text-align: center;
+    }
+}
+
+div.main-image {
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+
+div.main-paragraph {
+    p,
+    a {
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #fbf5ef;
+        width: 700px;
+        a {
+            color: #f2d3ab;
+        }
     }
 }
 
@@ -52,6 +80,7 @@ div.instructions {
     color: #fbf5ef;
 
     ul.ins-list {
+        margin: 0;
         display: inline-block;
         text-align: left;
     }
